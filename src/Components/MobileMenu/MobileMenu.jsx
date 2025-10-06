@@ -16,7 +16,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 ${isOpen ? 'translate-x-0' : 'translate-x-full'} 
             `}
         >
-            <div className="flex flex-col items-center p-4 h-full">
+            <div className="flex flex-col items-center p-4 h-full overflow-y-auto">
                
                <div className="closebtn w-full flex justify-between items-center mb-8" onClick={onClose}>
                   <img className='max-w-12' src={Images.LogoTwo} alt="" />
