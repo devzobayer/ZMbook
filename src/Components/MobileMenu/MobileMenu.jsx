@@ -24,7 +24,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                </div>
 
                 {/* Menu Links */}
-                <div className="mobile-menu w-full flex flex-col space-y-4">
+                <div className="mobile-menu w-full flex flex-col space-y-2">
                     <div className="profiles p-4  mobile-menu-nav flex items-center">
                      <Link className='' to="/profile">
                      <img className='profile-img' src={Images.profile} alt="Home" /></Link>
@@ -39,12 +39,12 @@ const MobileMenu = ({ isOpen, onClose }) => {
                  
                 
 
-                <div className="grid-link grid grid-cols-2 gap-5">
+                <div className="grid-link grid grid-cols-2 gap-2">
 
                     {MobileNavlink.map(item =>(
                         <div className="f-1 mobile-menu-nav p-4">
                          <Link className='' to={item.name}>
-                         <img className='w-8' src={item.img} alt="" />
+                         <img className='w-7' src={item.img} alt="" />
                          <h5 className='text-slate-500 font-normal'>{item.name}</h5>
                          </Link>
                     </div> 
