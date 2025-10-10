@@ -26,12 +26,12 @@ const Header = () => {
           
         <div className="flex items-center justify-center">
        <HeaderLogo searchOpen={searchOpen}/>
-       <SearchBar toggleSearch={toggleSearch} searchOpen={searchOpen}/>
+       <SearchBar  toggleSearch={toggleSearch} searchOpen={searchOpen}/>
 
           </div>
 
           
-           <NavMenu css={'hidden md:flex lg:flex xl:flex'}/>
+           <NavMenu css={'hidden md:flex lg:flex xl:flex '}/>
 
           <div className={`Account overflow-x-hidden  flex items-center transform transition-all duration-600 ease-in-out ${searchOpen ? 'opacity-0 w-0 translate-x-5' : 'opacity-100 translate-x-0'}`}> 
             <div className="account-img relative">

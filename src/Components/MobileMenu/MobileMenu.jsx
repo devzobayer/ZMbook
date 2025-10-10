@@ -3,12 +3,11 @@ import { Link } from 'react-router'
 import Images from '../../utilits/Images/Images'
 import MobileNavlink from '../../data/MobileMenuNavData'
 
-// যদি lucide-react ব্যবহার না করেন, তবে X-এর জায়গায় আপনার Images.Close বাটন ব্যবহার করুন।
 
 const MobileMenu = ({ isOpen, onClose }) => { 
     return (
         <div 
-            // এই ক্লাসে পরিবর্তন করা হয়েছে
+           
             className={`
                 fixed top-0 right-0 h-full w-full bg-slate-100 shadow-2xl z-50 
                 transform transition-transform duration-300 ease-in-out
