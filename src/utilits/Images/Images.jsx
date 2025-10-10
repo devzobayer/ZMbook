@@ -19,6 +19,9 @@ import Setting from '../../assets/setting.png'
 import Msg from '../../assets/msg.png'
 import Help from '../../assets/help.png'
 import Group from '../../assets/group.png'
+import Live from '../../assets/live.png'
+import Photo from '../../assets/photo.png'
+import Happy from '../../assets/happy.png'
 
 
 const profile = "https://media.licdn.com/dms/image/v2/D4E03AQEs1i6EPRc5Kw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667657495503?e=1762387200&v=beta&t=QTvB-R-sMT4eH06hmsN4cV3mDLug-W27HYIyL-i2fxk"
@@ -44,7 +47,10 @@ Save,
 Setting,
 Msg,
 Group,
-Help
+Help,
+Photo,
+Live,
+Happy
 }
 
 
