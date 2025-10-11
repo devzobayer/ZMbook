@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
 import Images from '../utilits/Images/Images'
-import Test from '../utilits/test'
 import Profile from '../utilits/Profile'
 import Post from '../Components/Post/Post'
 
