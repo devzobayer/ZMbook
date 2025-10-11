@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import Images from '../utilits/Images/Images'
 import Profile from '../utilits/Profile'
 import Post from '../Components/Post/Post'
+import Story from '../Components/Story/Story'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
         {/* Center (post) */}
         <div className="post text-center ">
          <Post/>
+         <Story/>
         </div>
 
         {/* Right side (chat) */}
