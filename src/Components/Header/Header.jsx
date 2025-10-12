@@ -36,7 +36,7 @@ const Header = () => {
           <div className={`Account   flex items-center transform transition-all duration-600 ease-in-out ${searchOpen ? 'opacity-0 w-0 translate-x-5' : 'opacity-100 translate-x-0'}`}> 
             <div className="account-img relative">
                 <img className={`profile-img border-2 border-teal-500  `} src={Images.profile} alt="" />
-                <img className='dropdown absolute bottom-0 right-0' src={Images.Down} alt="" />  
+                <img className='dropdown absolute bottom-0 right-0 hidden md:block' src={Images.Down} alt="" />  
             </div>             
           <div className="mobile-menu block md:hidden lg:hidden xl:hidden ml-2"  onClick={toggleMenu}><img className='max-w-8' src={Images.Menu} alt="" /></div>
               </div>
