@@ -22,7 +22,7 @@ const Header = () => {
     <>
     <nav className='bg-slate-100 border-b-1 border-teal-100 w-full overflow-x-hidden '>
            <div className="max-w-13xl px-3 md:px-6 mx-auto ">
-        <div className='h-16 flex items-center justify-between  '>
+        <div className='h-15 flex items-center justify-between  '>
           
         <div className="flex items-center justify-center">
        <HeaderLogo searchOpen={searchOpen}/>

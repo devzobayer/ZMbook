@@ -3,13 +3,13 @@ import Images from '../../../utilits/Images/Images'
 
 const SearchBar = ({searchOpen,toggleSearch}) => {
   return (
-    <div className="search-bar mt-2 ml-2  flex items-center  ">
+    <div className="search-bar mt-1 ml-2  flex items-center  ">
     <img src={Images.Search} alt="" className={`max-w-6 block md:hidden ${searchOpen ? 'hidden' : 'block'}`}  onClick={toggleSearch} />
     <div className="search ml-6 md:ml-1">
-       <input 
+          <input 
       type="text" 
-      className={`rounded-4xl p-2 px-6 md:px-7 input border-gray-300 bg-white transition duration-2000 
-        ${searchOpen ? 'block' : 'hidden '} md:block`} 
+      className={`rounded-4xl p-2 px-6 md:px-7 input border border-gray-300 bg-white transform transition-all duration-400 ease-in-out
+        ${searchOpen ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-5 scale-95 pointer-events-none'} md:block`} 
       placeholder='Search ZMbook'
     />
 

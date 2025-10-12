@@ -7,7 +7,7 @@ import Story from '../Components/Story/Story'
 
 const HomePage = () => {
   return (
-    <div className=" px-3 md:px-6  m-auto">
+    <div className="  m-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 ">
         
         {/* Left side (friends) */}
@@ -16,8 +16,9 @@ const HomePage = () => {
         </div>
 
         {/* Center (post) */}
-        <div className="post text-center ">
+        <div className="post  px-2 md:px-6 text-center ">
          <Post/>
+
          <Story/>
         </div>
 

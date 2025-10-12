@@ -8,11 +8,11 @@ const Post = () => {
             <div className="post-card flex items-center">
               <Profile/>
               <input type="text" 
-              className='w-full ml-4 input border-gray-300 bg-white rounded-full font-semibold'
+              className='w-full ml-4 p-2 md:p-3 input border-gray-300 bg-white rounded-full font-semibold'
               placeholder="What's on your mind, Muhammad?"
                />
                <div className="img block md:hidden">
-                <img className='w-15 ml-2' src={Images.Photo} alt="" />
+                <img className='w-10 ml-2' src={Images.Photo} alt="" />
                </div>
             </div>
             <div className="border-b-1 border-gray-300 my-4 hidden md:block"></div>
