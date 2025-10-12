@@ -4,7 +4,7 @@ import Profile from '../../utilits/Profile'
 
 const PostCard = ({postOpen, togglePost}) => {
   return (
-    <div className={`fixed  top-0 left-0 h-full w-full bg-white shadow-2xl z-50 
+    <div className={`fixed  top-0 left-0 h-full w-full bg-white shadow-2xl z-10 
                 transform transition-transform duration-300 ease-in-out
                 ${postOpen ? 'translate-x-0' : 'translate-x-[-100%]' } block md:hidden
     `}>

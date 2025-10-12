@@ -9,7 +9,8 @@ const SearchBar = ({searchOpen,toggleSearch}) => {
           <input 
       type="text" 
       className={`rounded-4xl p-2 px-3 md:px-7 input border border-gray-300 bg-white transform transition-all duration-400 ease-in-out
-        ${searchOpen ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-5 scale-95 pointer-events-none'} md:block`} 
+  ${searchOpen ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-5 scale-95 pointer-events-none'}
+  md:opacity-100 md:translate-x-0 md:scale-100 md:pointer-events-auto md:block`}
       placeholder='Search ZMbook'
     />
 

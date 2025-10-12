@@ -35,7 +35,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
-    <PostCard className="block md:hidden" postOpen={postOpen} togglePost={togglePost} />
+    <PostCard postOpen={postOpen} togglePost={togglePost} />
     </>
   )
 }

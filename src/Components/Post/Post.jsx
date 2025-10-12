@@ -8,6 +8,7 @@ const Post = ({togglePost}) => {
             <div className="post-card flex items-center">
               <Profile/>
               <input type="text" onClick={togglePost}
+              readOnly
               className='w-full ml-4 p-2 md:p-3 input border-gray-300 bg-white rounded-full font-semibold'
               placeholder="What's on your mind, Muhammad?"
                />
