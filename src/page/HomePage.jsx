@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router'
 import Images from '../utilits/Images/Images'
 import Profile from '../utilits/Profile'
 import Post from '../Components/Post/Post'
 import Story from '../Components/Story/Story'
+import PostCard from '../Components/PostCard/PostCard'
 
 const HomePage = () => {
+  const[postOpen ,setPostOpen] = useState(false);
+
+ const togglePost =()=>{
+      setPostOpen(!postOpen)
+ }
   return (
+    <>
     <div className="  m-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 ">
         
@@ -17,8 +24,8 @@ const HomePage = () => {
 
         {/* Center (post) */}
         <div className="post  px-2 md:px-6 text-center ">
-         <Post/>
-
+         <Post postOpen={postOpen} togglePost={togglePost}/>
+          
          <Story/>
         </div>
 
@@ -28,6 +35,8 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    <PostCard className="block md:hidden" postOpen={postOpen} togglePost={togglePost} />
+    </>
   )
 }
 

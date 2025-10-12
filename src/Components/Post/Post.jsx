@@ -2,12 +2,12 @@ import React from 'react'
 import Images from '../../utilits/Images/Images'
 import Profile from '../../utilits/Profile'
 
-const Post = () => {
+const Post = ({togglePost}) => {
   return (
    <div className="w-full bg-slate-50 rounded-2xl mt-2 p-4 ">
             <div className="post-card flex items-center">
               <Profile/>
-              <input type="text" 
+              <input type="text" onClick={togglePost}
               className='w-full ml-4 p-2 md:p-3 input border-gray-300 bg-white rounded-full font-semibold'
               placeholder="What's on your mind, Muhammad?"
                />
