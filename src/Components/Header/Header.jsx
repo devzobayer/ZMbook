@@ -22,7 +22,7 @@ const Header = () => {
     <>
     <nav className='bg-slate-100 border-b-1 border-teal-100 w-full overflow-x-hidden '>
            <div className="max-w-13xl px-3 md:px-6 mx-auto ">
-        <div className='h-15 flex items-center justify-between  '>
+        <div className='h-16 flex items-center justify-between  '>
           
         <div className="flex items-center justify-center">
        <HeaderLogo searchOpen={searchOpen}/>
@@ -38,7 +38,7 @@ const Header = () => {
                 <img className={`profile-img border-2 border-teal-500  `} src={Images.profile} alt="" />
                 <img className='dropdown absolute bottom-0 right-0' src={Images.Down} alt="" />  
             </div>             
-          <div className="mobile-menu block md:hidden lg:hidden xl:hidden ml-3"  onClick={toggleMenu}><img className='w-8' src={Images.Menu} alt="" /></div>
+          <div className="mobile-menu block md:hidden lg:hidden xl:hidden ml-3"  onClick={toggleMenu}><img className='max-w-8' src={Images.Menu} alt="" /></div>
               </div>
             
               
