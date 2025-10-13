@@ -23,7 +23,7 @@ const HomePage = () => {
         </div>
 
         {/* Center (post) */}
-        <div className="post  px-2 md:px-6 text-center ">
+        <div className="post  px-1 md:px-6 text-center ">
          <Post postOpen={postOpen} togglePost={togglePost}/>
           
          <Story/>

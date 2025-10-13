@@ -4,7 +4,7 @@ import Profile from '../../utilits/Profile'
 
 const Post = ({togglePost}) => {
   return (
-   <div className="w-full bg-slate-50 rounded-2xl mt-2 p-4 ">
+   <div className="w-full bg-slate-100 rounded-lg mt-1 p-3 md:p-4 ">
             <div className="post-card flex items-center">
               <Profile/>
               <input type="text" onClick={togglePost}

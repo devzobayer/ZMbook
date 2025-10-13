@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import Images from '../../utilits/Images/Images'
 import { Link } from 'react-router'
 import NavMenu from '../NavMenu/NavMenu'
-import MobileMenu from '../MobileMenu/MobileMenu'
+import MobileMenuLayout from '../MobileMenu/MobileMenuLayout'
 import HeaderLogo from '../HeaderComponents/HeaderLogo/HeaderLogo'
 import SearchBar from '../HeaderComponents/SearchBar/SearchBar'
+import MobileMenu from '../MobileMenu/MobileMenu'
 
 
 const Header = () => {
@@ -27,17 +28,19 @@ const Header = () => {
         <div className="flex items-center justify-center">
        <HeaderLogo searchOpen={searchOpen}/>
        <SearchBar  toggleSearch={toggleSearch} searchOpen={searchOpen}/>
-
+ 
           </div>
 
           
            <NavMenu css={'hidden md:flex lg:flex xl:flex '}/>
+           
 
           <div className={`Account   flex items-center transform transition-all duration-600 ease-in-out ${searchOpen ? 'opacity-0 w-0 translate-x-5' : 'opacity-100 translate-x-0'}`}> 
             <div className="account-img relative">
-                <img className={`profile-img border-2 border-teal-500  `} src={Images.profile} alt="" />
+                <img className={`profile-img border-2 border-teal-500  hidden md:block`} src={Images.profile} alt="" />
                 <img className='dropdown absolute bottom-0 right-0 hidden md:block' src={Images.Down} alt="" />  
-            </div>             
+            </div>  
+                    <MobileMenu/>
           <div className="mobile-menu block md:hidden lg:hidden xl:hidden ml-2"  onClick={toggleMenu}><img className='max-w-8' src={Images.Menu} alt="" /></div>
               </div>
             
@@ -47,7 +50,7 @@ const Header = () => {
           </nav>
 
             {/* Side Drawer Component */}
-            <MobileMenu isOpen={isMenuOpen} onClose={toggleMenu} />
+            <MobileMenuLayout isOpen={isMenuOpen} onClose={toggleMenu} />
           
           </>
   )
