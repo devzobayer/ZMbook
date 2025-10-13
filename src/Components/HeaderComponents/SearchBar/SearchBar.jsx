@@ -5,7 +5,7 @@ const SearchBar = ({searchOpen,toggleSearch}) => {
   return (
     <div className="search-bar mt-1 ml-2  flex items-center  ">
     <img src={Images.Search} alt="" className={`max-w-6 block md:hidden ${searchOpen ? 'hidden' : 'block'}`}  onClick={toggleSearch} />
-    <div className="search ml-6 md:ml-1">
+    <div className="search   md:ml-1">
           <input 
       type="text" 
       className={`rounded-4xl p-2 px-3 md:px-7 input border border-gray-300 bg-white transform transition-all duration-400 ease-in-out
