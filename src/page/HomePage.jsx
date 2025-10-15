@@ -4,6 +4,7 @@ import Images from '../utilits/Images/Images'
 import Profile from '../utilits/Profile'
 import Post from '../Components/Post/Post'
 import Story from '../Components/Story/Story'
+import PostCard from '../Components/PostCard/PostCard'
 
 
 const HomePage = () => {
