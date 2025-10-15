@@ -8,7 +8,7 @@ const PostCard = ({postOpen, togglePost}) => {
                 transform transition-transform duration-300 ease-in-out
                 ${postOpen ? 'translate-x-0' : 'translate-x-[-100%]' } block md:hidden
     `}>
-        <div className="post-card px-2">
+        <div className="post-card px-2 overflow-y-hidden">
             <div className="post-action flex justify-between">
                 <div className="flex items-center">
                 <img className='w-8' src={Images.Back} alt=""  onClick={togglePost}/> 
