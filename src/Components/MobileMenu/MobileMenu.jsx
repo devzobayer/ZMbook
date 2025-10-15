@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 const MobileMenu = () => {
   return (
-     <div className={`flex items-center  space-x-8  md:hidden mr-7 mt-2`}>
+     <div className={`flex items-center  space-x-8  md:hidden mr-7 `}>
              <Link><img className='max-w-8' src={Images.Home} alt="" /></Link>
              <Link><img className='max-w-7' src={Images.Videos} alt="" /></Link>
              <Link><img className='max-w-7' src={Images.Notify} alt="" /></Link>

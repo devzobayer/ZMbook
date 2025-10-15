@@ -3,8 +3,8 @@ import Images from '../../../utilits/Images/Images'
 
 const SearchBar = ({searchOpen,toggleSearch}) => {
   return (
-    <div className="search-bar mt-1 ml-2  flex items-center  ">
-    <img src={Images.Search} alt="" className={`max-w-6 block md:hidden ${searchOpen ? 'hidden' : 'block'}`}  onClick={toggleSearch} />
+    <div className="search-bar  ml-2  flex items-center  ">
+    <img src={Images.Search} alt="" className={`max-w-5 block md:hidden ${searchOpen ? 'hidden' : 'block'}`}  onClick={toggleSearch} />
     <div className="search   md:ml-1">
           <input 
       type="text" 
