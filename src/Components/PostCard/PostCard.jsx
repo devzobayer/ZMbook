@@ -47,7 +47,7 @@ const PostCard = ({postOpen, togglePost}) => {
                
 
              </div>
-             <button className='w-full bg-teal-400 mt-10 rounded-md py-2 text-white font-semibold text-lg'>Post</button>
+             <button className='w-full submit-btn mt-10 rounded-md py-2 text-white font-semibold text-lg'>Post</button>
             </div>
 
         </div>

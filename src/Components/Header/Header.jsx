@@ -1,47 +1,30 @@
-import React, { useState } from 'react'
+import React, {  } from 'react'
 import Images from '../../utilits/Images/Images'
 import { Link } from 'react-router'
 import NavMenu from '../NavMenu/NavMenu'
-import MobileMenuLayout from '../MobileMenu/MobileMenuLayout'
-import HeaderLogo from '../HeaderComponents/HeaderLogo/HeaderLogo'
-import SearchBar from '../HeaderComponents/SearchBar/SearchBar'
+import SubHeader from './SubHeader'
 import MobileMenu from '../MobileMenu/MobileMenu'
 
 
+
 const Header = () => {
-
-   const [isMenuOpen, setIsMenuOpen] = useState(false); 
-   const [searchOpen, setSearchOpen] = useState(false)
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-    const toggleSearch =()=>{
-       setSearchOpen(!searchOpen);
-    }
+    
   return (
     <>
-    <nav className='bg-slate-100 border-b-1 border-teal-100 w-full overflow-x-hidden '>
+    <SubHeader/>
+    <nav className='bg-slate-100 border-b-1 border-slate-200 w-full overflow-x-hidden '>
            <div className="max-w-13xl px-3 md:px-6 mx-auto ">
-        <div className='h-16 flex items-center justify-between  '>
           
-        <div className="flex items-center justify-center">
-       <HeaderLogo searchOpen={searchOpen}/>
-       <SearchBar  toggleSearch={toggleSearch} searchOpen={searchOpen}/>
- 
-          </div>
-
-          
+        <div className='h-16 flex items-center justify-center md:justify-between  '>
+             
            <NavMenu css={'hidden md:flex lg:flex xl:flex '}/>
-           
+           <MobileMenu/>
 
-          <div className={`Account   flex  items-center transform transition-all duration-600 ease-in-out ${searchOpen ? 'opacity-0 w-0 translate-x-5' : 'opacity-100 translate-x-0'}`}> 
+          <div className={`Account   flex  items-center transform transition-all duration-600 ease-in-out`} > 
             <div className="account-img relative">
                 <img className={`profile-img border-2 border-teal-500  hidden md:block`} src={Images.profile} alt="" />
                 <img className='dropdown absolute bottom-0 right-0 hidden md:block' src={Images.Down} alt="" />  
             </div>  
-                    <MobileMenu/>
-          <div className="mobile-menu block md:hidden lg:hidden xl:hidden ml-2"  onClick={toggleMenu}><img className='max-w-8' src={Images.Menu} alt="" /></div>
               </div>
             
               
@@ -49,8 +32,6 @@ const Header = () => {
           </div>
           </nav>
 
-            {/* Side Drawer Component */}
-            <MobileMenuLayout isOpen={isMenuOpen} onClose={toggleMenu} />
           
           </>
   )
