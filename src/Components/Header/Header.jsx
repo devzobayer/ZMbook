@@ -12,13 +12,13 @@ const Header = () => {
   return (
     <>
     <SubHeader/>
-    <nav className='bg-slate-100 border-b-1 border-slate-200 w-full overflow-x-hidden '>
+    <MobileMenu/>
+    <nav className='bg-slate-100 border-b-1 border-slate-200 w-full overflow-x-hidden  hidden md:block'>
            <div className="max-w-13xl px-3 md:px-6 mx-auto ">
           
-        <div className='h-16 flex items-center justify-center md:justify-between  '>
+        <div className='h-15 flex items-center justify-center md:justify-between  '>
              
            <NavMenu css={'hidden md:flex lg:flex xl:flex '}/>
-           <MobileMenu/>
 
           <div className={`Account   flex  items-center transform transition-all duration-600 ease-in-out`} > 
             <div className="account-img relative">

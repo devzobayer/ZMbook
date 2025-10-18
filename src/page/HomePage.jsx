@@ -26,9 +26,9 @@ const HomePage = () => {
         {/* Center (post) */}
         <div className="post   md:px-6 text-center ">
          <Post postOpen={postOpen} togglePost={togglePost} />
-           <div className="border-b-1 border-slate-300  mt-2 border-double"></div>
+           <div className="border-b-1 border-slate-200  mt-2 border-double"></div>
          <Story/>
-         <div className="border-b-1 border-slate-300  mt-2 border-double"></div>
+         <div className="border-b-1 border-slate-200  mt-2 border-double"></div>
         </div>
 
         {/* Right side (chat) */}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Images from '../../utilits/Images/Images'
 import MobileMenu from '../MobileMenu/MobileMenuLayout';
+import { Link } from 'react-router';
 
 const SubHeader = () => {
   const[isOpen,setIsOpen]=useState(false);
@@ -17,7 +18,7 @@ const SubHeader = () => {
          </div>
          <div className="menu flex items-center space-x-4">
           <img className='max-w-7' src={Images.Plus} alt="" />
-          <img className='max-w-7' src={Images.Search} alt="" />
+          <Link to="/search"><img className='max-w-7' src={Images.Search} alt="" /></Link>
           <img className='max-w-7' src={Images.Menu} alt="" onClick={toggleMenu} /> 
          </div>
 
