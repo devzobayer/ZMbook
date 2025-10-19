@@ -1,6 +1,6 @@
 import React from 'react'
 import Images from '../../utilits/Images/Images'
-import Profile from '../../utilits/Profile'
+import Profile from '../../utilits/ProfileCard'
 
 const Post = () => {
   return (

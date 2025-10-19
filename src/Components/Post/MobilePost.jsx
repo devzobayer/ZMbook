@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../../utilits/Profile'
+import Profile from '../../utilits/ProfileCard'
 import Images from '../../utilits/Images/Images'
 import { Link } from 'react-router'
 

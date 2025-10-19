@@ -6,6 +6,7 @@ import Header from './Components/Header/Header'
 import Search from './Components/Search/Search'
 import Composser from './Components/Composser/Composser'
 import Videos from './page/Videos'
+import Profile from './page/Profile'
 
 const Layout= ()=>{
      return (
@@ -26,6 +27,7 @@ const App = () => {
       <Route path='/search' element={<Search/>} />
       <Route path='/composser' element={<Composser/>} />
       <Route path='/login' element={<LoginPage/>} />
+      <Route path='/profile' element={<Profile/>} />
    </Routes>
   )
 }

@@ -24,6 +24,7 @@ import Photo from '../../assets/photo.png'
 import Happy from '../../assets/happy.png'
 import Back from '../../assets/back.png'
 import Plus from '../../assets/plus.png'
+import Dot from '../../assets/dot.png'
 
 
 const profile = "https://media.licdn.com/dms/image/v2/D4E03AQEs1i6EPRc5Kw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667657495503?e=1762387200&v=beta&t=QTvB-R-sMT4eH06hmsN4cV3mDLug-W27HYIyL-i2fxk"
@@ -54,7 +55,8 @@ Help,
 Photo,
 Live,
 Happy,
-Plus
+Plus,
+Dot
 }
 
 
