@@ -1,18 +1,12 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router'
-import Images from '../utilits/Images/Images'
-import Profile from '../utilits/Profile'
-import Post from '../Components/Post/Post'
+import React, {  } from 'react'
 import Story from '../Components/Story/Story'
-import PostCard from '../Components/PostCard/PostCard'
+import DekstopPost from '../Components/Post/DekstopPost'
+import MobilePost from '../Components/Post/MobilePost'
+
 
 
 const HomePage = () => {
-   const[postOpen ,setPostOpen] = useState(false);
-  
-   const togglePost =()=>{
-        setPostOpen(!postOpen)
-   }
+
   return (
     <>
     <div className="  m-auto">
@@ -25,9 +19,10 @@ const HomePage = () => {
 
         {/* Center (post) */}
         <div className="post   md:px-6 text-center ">
-         <Post postOpen={postOpen} togglePost={togglePost} />
+         <DekstopPost/>
+         <MobilePost/>
            <div className="border-b-1 border-slate-200  mt-2 border-double"></div>
-         <Story/>
+           <Story/>
          <div className="border-b-1 border-slate-200  mt-2 border-double"></div>
         </div>
 
@@ -37,7 +32,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
-   <PostCard postOpen={postOpen} togglePost={togglePost} />
+   
     </>
   )
 }

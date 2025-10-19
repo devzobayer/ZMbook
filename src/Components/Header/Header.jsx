@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import NavMenu from '../NavMenu/NavMenu'
 import SubHeader from './SubHeader'
 import MobileMenu from '../MobileMenu/MobileMenu'
+import SearchBar from '../HeaderComponents/SearchBar/SearchBar'
 
 
 
@@ -17,6 +18,12 @@ const Header = () => {
            <div className="max-w-13xl px-3 md:px-6 mx-auto ">
           
         <div className='h-15 flex items-center justify-center md:justify-between  '>
+             <div className="logo flex items-center">
+              <img className='max-w-10' src={Images.LogoTwo} alt="" />
+              <div className="search">
+           <SearchBar/>
+              </div>
+             </div>
              
            <NavMenu css={'hidden md:flex lg:flex xl:flex '}/>
 

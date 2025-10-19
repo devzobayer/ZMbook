@@ -24,7 +24,7 @@
   }
 
   .menu-logo {
-    @apply max-w-16 p-1 px-4 rounded hover:bg-slate-200 transition-colors duration-600 ;
+    @apply max-w-15 p-1 px-4 rounded hover:bg-slate-200 transition-colors duration-600 ;
   }
   
 

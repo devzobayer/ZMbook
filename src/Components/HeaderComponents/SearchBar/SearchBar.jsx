@@ -1,21 +1,17 @@
 import React from 'react'
 import Images from '../../../utilits/Images/Images'
 
-const SearchBar = ({searchOpen,toggleSearch}) => {
+const SearchBar = () => {
   return (
-    <div className="search-bar  ml-2  flex items-center  ">
-    <img src={Images.Search} alt="" className={`max-w-5 block md:hidden ${searchOpen ? 'hidden' : 'block'}`}  onClick={toggleSearch} />
-    <div className="search   md:ml-1">
+    <div className="search-bar  ml-4 w-70  flex items-center  ">
+
           <input 
       type="text" 
-      className={`rounded-4xl p-2 px-3 md:px-7 input border border-gray-300 bg-white transform transition-all duration-400 ease-in-out
-  ${searchOpen ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-5 scale-95 pointer-events-none'}
-  md:opacity-100 md:translate-x-0 md:scale-100 md:pointer-events-auto md:block`}
+      className={`rounded-full py-2 px-4 input border border-gray-300 bg-white text-sm`}
       placeholder='Search ZMbook'
     />
 
-    </div>
-    <img className={`w-5 ml-1 mb-6 ${searchOpen ? 'block' : 'hidden w-0' } md:hidden`} src={Images.Close} alt="" onClick={toggleSearch}/>
+
   </div>
   )
 }

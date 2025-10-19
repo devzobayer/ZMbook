@@ -1,17 +1,15 @@
 import React from 'react'
 import Images from '../../utilits/Images/Images'
 import Profile from '../../utilits/Profile'
+import { Link } from 'react-router'
 
-const PostCard = ({postOpen, togglePost}) => {
+const Composser = () => {
   return (
-    <div className={`fixed  top-0 left-0 h-full w-full bg-white shadow-2xl z-10 
-                transform transition-transform duration-300 ease-in-out
-                ${postOpen ? 'translate-x-0' : 'translate-x-[-100%]' } block md:hidden
-    `}>
+    <div className={` bg-white shadow-2xl  block md:hidden`}>
         <div className="post-card  overflow-y-hidden">
             <div className="post-action px-2 flex justify-between">
                 <div className="flex items-center justify-center py-2">
-                <img className='w-8' src={Images.Back} alt=""  onClick={togglePost}/> 
+               <Link to="/"> <img className='w-8' src={Images.Back} alt="" /> </Link>
                 <h5 className='ml-2 font-semibold text-gray-500'>Create Post</h5>
                 </div>
                <button className='font-bold text-md text-teal-500'>Post</button>
@@ -55,4 +53,4 @@ const PostCard = ({postOpen, togglePost}) => {
   )
 }
 
-export default PostCard
+export default Composser

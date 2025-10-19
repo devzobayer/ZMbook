@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 const Search = () => {
   return (
-    <div className='search-card'>
+    <div className='search-card md:hidden'>
         <div className=" py-2 border-b-1 border-slate-200 ">
           <div className="mx-3 flex items-center justify-between">
             <div className="back">

@@ -4,6 +4,8 @@ import LoginPage from './page/LoginPage'
 import HomePage from './page/HomePage'
 import Header from './Components/Header/Header'
 import Search from './Components/Search/Search'
+import Composser from './Components/Composser/Composser'
+import Videos from './page/Videos'
 
 const Layout= ()=>{
      return (
@@ -19,8 +21,10 @@ const App = () => {
     <Routes>
       <Route element={<Layout/>}>
       <Route path='/' element={<HomePage/>} />
+      <Route path='/videos' element={<Videos/>} />
       </Route>
       <Route path='/search' element={<Search/>} />
+      <Route path='/composser' element={<Composser/>} />
       <Route path='/login' element={<LoginPage/>} />
    </Routes>
   )
